@@ -1,37 +1,32 @@
-# test
+---
+description: 图片基本信息包括图片格式、图片大小、色彩模型。在图片下载URL后附加imageInfo指示符（区分大小写），即可获取JSON格式的图片基本信息。
+---
 
-{% api-method method="get" host="https://api.cakes.com" path="/v1/cakes/:id" %}
+# 图片基本信息
+
+
+
+{% api-method method="get" host="" path=" /image/{bucket}/{objectId}" %}
 {% api-method-summary %}
-Get Cakes
+imageInfo
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint allows you to get free cakes.
+例子：http://192.168.0.77:6080/cms/image/xjf-image/1525925059047?imageInfo  
+不加参数则返回原图
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-{% api-method-parameter name="id" type="string" %}
-ID of the cake to get, for free of course.
+{% api-method-parameter name="objectId" type="string" required=true %}
+文件ID
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="bucket" type="string" required=true %}
+bucket名称
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
-
-{% api-method-headers %}
-{% api-method-parameter name="Authentication" type="string" required=true %}
-Authentication token to track down who is emptying our stocks.
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-
-{% api-method-query-parameters %}
-{% api-method-parameter name="recipe" type="string" %}
-The API will do its best to find a cake matching the provided recipe.
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="gluten" type="boolean" %}
-Whether the cake should be gluten-free or not.
-{% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -63,6 +58,4 @@ Could not find a cake matching this query.
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
-
 

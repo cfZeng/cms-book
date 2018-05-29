@@ -1,19 +1,27 @@
-# test
+---
+description: 用于获取某个Object，此操作要求用户对该Object有读权限。
+---
 
-{% api-method method="get" host="https://api.cakes.com" path="/v1/cakes/:id" %}
+# GetObject
+
+{% api-method method="get" host="" path="/object/{bucket}/{objectName}" %}
 {% api-method-summary %}
-Get Cakes
+Get Object
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint allows you to get free cakes.
+用于获取某个Object，此操作要求用户对该Object有读权限。
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-{% api-method-parameter name="id" type="string" %}
-ID of the cake to get, for free of course.
+{% api-method-parameter name="bucket" type="string" required=true %}
+bucket
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="objectName" type="string" required=true %}
+objectName
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 
@@ -22,16 +30,6 @@ ID of the cake to get, for free of course.
 Authentication token to track down who is emptying our stocks.
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
-
-{% api-method-query-parameters %}
-{% api-method-parameter name="recipe" type="string" %}
-The API will do its best to find a cake matching the provided recipe.
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="gluten" type="boolean" %}
-Whether the cake should be gluten-free or not.
-{% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}

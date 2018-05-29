@@ -1,37 +1,35 @@
-# test
+---
+description: '图片瘦身尽可能在不影响画质的情况下，对JPEG、PNG格式的图片实时压缩，大幅度缩小文件的体积:加快客户端图片的加载速度，提升用户体验;'
+---
 
-{% api-method method="get" host="https://api.cakes.com" path="/v1/cakes/:id" %}
+# 图片瘦身\(实现中\)
+
+{% api-method method="get" host="" path="{bucket}/{objectId}/imageslim" %}
 {% api-method-summary %}
-Get Cakes
+imageslim
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint allows you to get free cakes.
+
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-{% api-method-parameter name="id" type="string" %}
-ID of the cake to get, for free of course.
+{% api-method-parameter name="objectId" type="string" required=true %}
+文件ID值
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="bucket" type="string" required=true %}
+bucket名称
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
-{% api-method-parameter name="Authentication" type="string" required=true %}
-Authentication token to track down who is emptying our stocks.
+{% api-method-parameter name="x-ycore-cms-token" type="string" required=true %}
+接口认证
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
-
-{% api-method-query-parameters %}
-{% api-method-parameter name="recipe" type="string" %}
-The API will do its best to find a cake matching the provided recipe.
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="gluten" type="boolean" %}
-Whether the cake should be gluten-free or not.
-{% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
