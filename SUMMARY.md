@@ -16,7 +16,7 @@
   * [图片基本处理](a-a/tu-pian-ji-ben-chu-li.md)
   * [图片高级处理](a-a/tu-pian-gao-ji-chu-li.md)
   * [图片水印处理](a-a/tu-pian-shui-yin-chu-li.md)
-  * [图片圆角处理\(实现中\)](a-a/tu-pian-yuan-jiao-chu-li.md)
+  * [图片圆角处理](a-a/tu-pian-yuan-jiao-chu-li.md)
   * [图片EXIF信息](a-a/tu-pian-exif-xin-xi.md)
 * 音视频处理
   * [音视频处理使用说明](untitled-2/yin-shi-pin-chu-li-shi-yong-shuo-ming.md)

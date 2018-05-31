@@ -4,7 +4,7 @@ description: >-
   将图片生成圆角图片，并且可以指定图片的圆角大小。这个接口支持的原图片格式有png、jpg，处理后的图片格式为png。注意：处理前的图片大小不能超过20M。
 ---
 
-# 图片圆角处理\(实现中\)
+# 图片圆角处理
 
 ## 接口规格 {#1}
 
@@ -23,7 +23,7 @@ roundPic/radius/<radius>
 |  /radiusx/&lt;radiusx&gt; |  否 |  圆角水平大小的参数，可以使用像素数（如200）或百分比（如!25p）。需要与`radiusy`同时使用。 |
 |  /radiusy/&lt;radiusy&gt; |  否 |  圆角垂直大小的参数，可以使用像素数（如200）或百分比（如!25p）。需要与`radiusx`同时使用。 |
 
-{% api-method method="get" host="" path="{bucket}/{objectId}/roundPic" %}
+{% api-method method="get" host="" path="{bucket}/{objectId}?roundPic/radius/20" %}
 {% api-method-summary %}
 roundPic
 {% endapi-method-summary %}
