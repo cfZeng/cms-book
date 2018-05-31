@@ -4,7 +4,7 @@ description: '图片瘦身尽可能在不影响画质的情况下，对JPEG、PN
 
 # 图片瘦身
 
-{% api-method method="get" host="" path="{bucket}/{objectId}/imageslim" %}
+{% api-method method="get" host="" path="{bucket}/{objectId}?imageslim" %}
 {% api-method-summary %}
 imageslim
 {% endapi-method-summary %}
