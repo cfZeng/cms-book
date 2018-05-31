@@ -12,7 +12,7 @@
   * [DeleteObject](guan-yu-object-cao-zuo/deleteobject.md)
 * 图片处理
   * [图片基本信息](a-a/untitled.md)
-  * [图片瘦身\(实现中\)](a-a/tu-pian-shou-shen.md)
+  * [图片瘦身](a-a/tu-pian-shou-shen.md)
   * [图片基本处理](a-a/tu-pian-ji-ben-chu-li.md)
   * [图片高级处理](a-a/tu-pian-gao-ji-chu-li.md)
   * [图片水印处理](a-a/tu-pian-shui-yin-chu-li.md)

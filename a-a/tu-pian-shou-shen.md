@@ -2,7 +2,7 @@
 description: '图片瘦身尽可能在不影响画质的情况下，对JPEG、PNG格式的图片实时压缩，大幅度缩小文件的体积:加快客户端图片的加载速度，提升用户体验;'
 ---
 
-# 图片瘦身\(实现中\)
+# 图片瘦身
 
 {% api-method method="get" host="" path="{bucket}/{objectId}/imageslim" %}
 {% api-method-summary %}
